@@ -54,3 +54,41 @@ filter f (x:xs)
 
 
 We can see that filter and map (defined recursively) follow a similar pattern, that we can abstrat in another function. We will see how foldr will come in handy for this.
+
+
+
+
+
+# part 3
+
+function composition is done with the operator `.` in haskell.
+
+It's weird.
+
+```
+-- point free style
+odd = not . even
+-- or
+odd = \x -> not (even x)
+```
+
+`all` checks if every element of the list satisfies the predicate
+
+```
+all even [1..10]
+> False
+```
+
+
+`any` similarly checks if any element of the list satisfies the predicate
+
+```
+any even [1..10]
+```
+
+
+`takeWhile` takes a predicate and selects the elements from a list until the predicate is false.
+
+`dropWhile` does the same in the opposite sense.
+
+
