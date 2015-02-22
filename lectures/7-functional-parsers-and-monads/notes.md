@@ -13,3 +13,7 @@ means
     *   4
   2   3
 ```
+
+A parser can be naturally viewed as a function in a functional language.
+
+
